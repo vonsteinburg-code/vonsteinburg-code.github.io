@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="avatar.png" sizes="any" type="image/png">
+    <title>Attila - Repositories</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 40px 20px; }
+        .container { max-width: 1024px; margin: 0 auto; }
+        h1 { text-align: left; margin-bottom: 8px; color: #333; }
+        a { color: #0366d6; text-decoration: none; }
+
+        /* header with avatar + name */
+        #user-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 28px;
+        }
+
+        #user-avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #user-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #user-info h1 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #24292e;
+            line-height: 1;
+        }
+
+        #user-info .login {
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        .repos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(316px, 1fr)); gap: 20px; }
+        .repo-card { background: white; padding: 20px; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .repo-card h2 { margin-bottom: 10px; color: #0366d6; }
+        .repo-card a { color: #0366d6; text-decoration: none; }
+        .repo-card p { color: #666; margin-bottom: 10px; font-size: 0.95rem; line-height: 1.2rem}
+
+        .error { color: red; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="user-header">
+            <img id="user-avatar" src="avatar.png" alt="User avatar">
+            <div id="user-info">
+                <h1>Attila</h1>
+                <div class="login">
+                    <a href="https://github.com/vonsteinburg-code?tab=repositories">@vonsteinburg-code</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="repos" class="repos-grid">
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/emulator" target="_blank">emulator</a></h2>
+                <p>Handcrafted, easy to use,  Z80 CPU and ZX Spectrum emulator written in Java</p>
+            </div>
+
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/miss" target="_blank">miss</a></h2>
+                <p>Monitor Input Source Selector.  Switch between DisplayPort, HDMI and others</p>
+            </div>
+
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/imap2local" target="_blank">imap2local</a></h2>
+                <p>Tool for quickly backing up messages from IMAP accounts, including Gmail</p>
+            </div>
+
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/certificate" target="_blank">certificate</a></h2>
+                <p>
+                Request SSL certificates with this ACMEv2 client implementation.
+                Works with Let's Encrypt, ZeroSSL or with any other ACMEv2 compliant Certificate Authority
+                </p>
+            </div>
+
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/postdove" target="_blank">postdove</a></h2>
+                <p>A set of Bash scripts for setting up and managing a complete Postfix + Dovecot email environment</p>
+            </div>
+
+            <div class="repo-card">
+                <h2><a href="https://github.com/vonsteinburg-code/basic.http" target="_blank">basic.http</a></h2>
+                <p>A basic HTTP client library</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
